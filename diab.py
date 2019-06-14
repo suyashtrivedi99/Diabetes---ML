@@ -79,7 +79,7 @@ m ,n = X.shape
 initial_theta = np.zeros(n)
 
 Result = op.minimize(fun = cost_func, x0 = initial_theta,
-                     args = (X_train, y_train, lamb), method = 'TNC', jac = grad) #Minimizing Cost Function using Gradient Descent 
+                     args = (X_train, y_train, lamb), method = 'TNC', jac = grad) #Minimizing Cost Function 
 
 opt_theta = Result.x
 print("Optimal Parameters obtained: \n", opt_theta)
